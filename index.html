@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Government Of India</title>
+        <link
+            rel="shortcut icon"
+            href="https://t3.ftcdn.net/jpg/01/43/34/06/360_F_143340630_jcgZ0V6PhIG1N3LFDnaJ8k0m5XXswbJV.jpg"
+            type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- <script src="script.js"></script> -->
+    </head>
+    <body>
+        <header>
+            <div class="logo1">
+                <img src="./img/LOGOHINDI.jpg" alt="cctns logo" />
+            </div>
+            <div class="user_detail">
+                <div class="user_information">
+                    <div>
+                        <p>स्वागत</p>
+                        <p>तिथि</p>
+                        <p>समय</p>
+                    </div>
+                    <div>
+                        <p>Manjeet</p>
+                        <p id="p1"></p>
+                        <p id="p2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="logo2">
+                <img src="./img/sublogo.gif" alt="hello" />
+            </div>
+        </header>
+        <!-- section_btn div -->
+        <section>
+            <div class="btn_section">
+                <ul>
+                    <li><a href="#">मुख्य पृष्ठ</a></li>
+                    <li><a href="#">शिकायत</a></li>
+                    <li><a href="#">नागरिक सेवाएँ</a></li>
+                    <li><a href="#">खोज स्थिति</a></li>
+                    <li><a href="#">नागरिक जानकारी</a></li>
+                    <li><a href="#">देखें प्राथमिकी</a></li>
+                    <li><a href="#">स्थल का मानचित्र</a></li>
+                    <li><a href="#">अक्सर पूछे जाने वाले प्रश्न</a></li>
+                    <li><a href="#">नागरिक की प्रतिक्रिया</a></li>
+                    <li><a href="#">सिटीजन टिप</a></li>
+                    <li><a href="#">हमसे संपर्क करें</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- secton of loginlogout div  -->
+        <section>
+            <div class="loginlogout">
+                <div>
+                    <a href="#">मुख पृष्ठ » </a><a href="">पंजीकरण »</a
+                    ><a href="">प्रथम सूचना रिपोर्ट (आई आई एफ -एक) »</a>
+                    <span>नया पंजीकरण</span>
+                </div>
+
+                <div class="img_user">
+                    <img src="img/legal.png" alt="" />
+                    <img src="img/help.png" alt="" />
+                    <img src="img/logout.png" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="Primary_fir">
+                <div>
+                    <h4> प्राथमिकी पंजीकरण</h4>
+                </div>
+                <div>
+                    <h5>*अनिवार्य क्षेत्र</h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details of Lost Articale  -->
+
+        <section class="lost_article">
+
+			<div class="Tabs">
+				<a target="myframe" href="complaint.html">
+					<!--Complainant-->
+					शिकायतकर्ता
+				</a>
+                  <a target="myframe" href="injurd.html">
+					<!--Victim Information-->
+					पीड़ित सूचना
+				</a>
+				<a target="myframe" href="acidentspot.html">
+					<!--Occurrence-->
+					घटना – स्थल
+				</a>
+
+				<a target="myframe" href="vechicle.html">
+					<!--Property of Interest-->
+					वाहन का विवरण
+				</a>
+			</div>
+
+            <iframe class="iframe" name="myframe" src="complaint.html"  height="450px" width="99%" frameborder="2">
+
+            </iframe>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+    var date = new Date();
+    var current_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+    document.getElementById("p1").innerHTML = current_date;
+</script>
+
+
+<script>
+    var date = new Date();
+    var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    document.getElementById("p2").innerHTML = current_time;
+</script>
+    </body>
+</html>

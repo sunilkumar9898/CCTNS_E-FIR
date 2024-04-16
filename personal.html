@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .personal_table {
+                border-spacing: 0px 5px;
+                width: 100%;
+            }
+            .personal_table table tr{
+                padding-top: 5px;
+
+
+            }
+            .personal_table tr td:nth-child(1){
+                padding: 0px 10px;
+              background-color: #e0e6ff;
+            }
+
+            .personal_table tr td input{
+                width:50%;
+                padding: 3px;
+
+            }
+
+                .personal_table tr td select{
+                width:50%;
+                padding: 3px;
+
+
+            }
+
+            .container{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .container div{
+                width: 50%;
+            }
+            .mobile{
+                display: flex;
+                gap: 10px;
+
+            }
+            .mobile input:nth-child(1){
+                width:30px;
+            }
+                .mobile input:nth-child(2){
+                width:42%;
+            }
+            .landLine{
+                display: flex;
+                gap: 10px;
+
+            }
+            .landLine input:nth-child(1){
+                width:30px;
+            }
+            .landLine input:nth-child(2){
+                width:20%;
+            }
+                .landLine input:nth-child(3){
+                width:20%;
+            }
+
+    .checkbox {
+    border-spacing: 50px;
+    display: flex;
+    justify-content: start;
+
+        }
+        .checkbox td{
+            padding: 10px;
+        }
+
+
+
+
+#table2{
+    margin-top: 40px;
+}
+#table2 table{
+    width: 40%;
+}
+#table2 table tr{
+    background-color: rgb(152, 186, 239);
+
+}
+#table2 table tr td{
+    background-color: #2b6ac1;
+    padding: 5px;
+    font-weight: 850;
+    color: white;
+}
+
+.table2{width: 95%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.table2 form:nth-child(1){
+    width: 50%;
+
+}
+.table2 form table:nth-child(1){
+    width:70%;
+}
+.table2 form table tr td input{
+    width: 70%;
+}
+.table2 form table tr td select{
+    width: 68%;
+}
+.table2 form table:nth-child(1) tr td:nth-child(1){
+background-color: #e0e6ff;
+}
+
+
+.table2 form:nth-child(2){
+    width: 40%;
+    align-items: start;
+
+
+}
+.table2 form table:nth-child(2){
+    width:70%;
+    justify-content: start;
+}
+.table2 form table:nth-child(2) tr td:nth-child(1){
+background-color: #e0e6ff;
+}
+
+.table2 form table:nth-child(2) tr td input{
+    width: 80%;
+
+}
+.table2 form table:nth-child(2) tr td select{
+    width: 78%;
+}
+
+legend{
+    background-color: #2b6ac1;
+    color: white;
+    font-weight: 750;
+    padding: 5px;
+}
+
+.empty_btn{
+    margin:40px 0px;
+    width: 8%;
+    float: right;
+}
+
+.empty_btn  button{
+    padding: 8px 18px;
+    color: rgb(0, 157, 255);
+    font-weight: 950;
+
+}
+
+
+
+@media (min-width:220px) and (max-width:420px) {
+    .personal_table {
+                border-spacing: 0px 20px;
+                width: 100%;
+            }
+        .container{
+            width: 100%;
+            font-size: 13px;
+                display: block;
+
+            }
+            .container table{
+                width: 100%;
+
+            }
+            .container div{
+                width: 100%;
+            }
+            .table2{
+               display: block;
+
+}
+            .personal_table tr td input{
+                width:90%;
+                padding: 4px;
+
+            }
+                .personal_table tr td select{
+                width:90%;
+                padding: 4px;
+
+
+            }
+
+            .container div:nth-child(2) table tr td:nth-child(1){
+                font-size: 13px;
+                width:30px;
+            }
+
+                .mobile{
+                display: flex;
+                gap: 5px;
+
+            }
+            .mobile button{
+                font-size: 12px;
+            }
+            .email{
+                display: flex;
+                gap: 5px;
+                width: 90%;
+            }
+            .email button{
+                font-size: 12px;
+            }
+
+            .empty_btn{
+    margin:40px 0px;
+    width: 20%;
+    float: right;
+}
+
+.empty_btn  button{
+    padding: 8px 5px;
+
+
+}
+#table2 table{
+    width: 90%;
+}
+
+.table2{
+    display: block;
+
+}
+.table2 form:nth-child(1){
+    width: 100%;
+}
+.table2 form table:nth-child(1){
+    width:100%;
+}
+.table2 form table tr td input{
+    width: 90%;
+}
+.table2 form table tr td select{
+    width: 88%;
+}
+
+.table2 form:nth-child(2){
+    width: 100%;
+    align-items: start;
+
+
+}
+.table2 form table:nth-child(2){
+    width:95%;
+    justify-content: start;
+}
+.table2 form table:nth-child(2) tr td:nth-child(1){
+background-color: #e0e6ff;
+}
+
+.table2 form table:nth-child(2) tr td input{
+    width: 80%;
+
+}
+.table2 form table:nth-child(2) tr td select{
+    width: 78%;
+}
+
+
+
+
+
+
+}
+
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div>
+            <form action="">
+                    <table width="50%" class="personal_table" >
+            <tr>
+                <td>लिंग*</td>
+                <td>
+                    <select name="" id="">
+                        <option value="0">-----चयन-----</option>
+                        <option value="4">अज्ञात</option>
+                        <option value="3" selected="selected">पुरुष</option>
+                        <option value="2">महिला</option>
+                        <option value="1">हिजड़ा/किन् &zwj;नर</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>प्रथम नाम*</td>
+                <td>
+                    <input type="text" placeholder="Name">
+                </td>
+            </tr>
+                <tr>
+                <td>मध्य नाम</td>
+                <td>
+                    <input type="text" placeholder="middle name">
+                </td>
+            </tr>
+
+                    </tr>
+                <tr>
+                <td>अंतिम नाम</td>
+                <td>
+                    <input type="text" placeholder="Last  name">
+                </td>
+            </tr>
+
+                    </tr>
+                <tr>
+                <td>उपनाम</td>
+                <td>
+                    <input type="text" placeholder="Upname">
+                    <button>सहेजे</button>
+                </td>
+
+            </tr>
+
+        </table>
+            </form>
+        </div>
+        <div>
+            <form action="">
+                    <table width="50%" class="personal_table" >
+            <tr>
+                <td >वैवाहिक स्थिति</td>
+                <td>
+                    <select id="select3">
+                                                    <option value="0"> -----चयन-----</option>
+                                                    <option value="4">अलग- अलग</option><option value="2">अविवाहित</option><option value="6">तलाकशुदा</option><option value="7">लिव इन रिलेशन</option><option value="3">विधवा</option><option value="5">विधुर</option><option value="1">विवाहित</option>
+                                                </select>
+                </td>
+            </tr>
+            <tr>
+                <td >मोबाईल नंबर</td>
+                <td class="mobile">
+                    <input type="text" value="+91" > <input type="text"> <button>सत्यापित करें</button>
+                </td>
+            </tr>
+                <tr>
+                <td >लैंडलाइन नंबर</td>
+                <td class="landLine">
+                    <input type="text" value="+91" > <input type="text"> <input type="text">
+                </td>
+            </tr>
+
+
+                <tr>
+                <td >ईमेल आईडी</td>
+                <td class="email">
+                    <input type="email" placeholder="email"> &nbsp;<button>सत्यापित करें</button>
+                </td>
+            </tr>
+
+                    </tr>
+                <tr class="checkbox">
+                <td class="label" id="label">क्या पीड़ित और शिकायतकर्ता एक ही हैं?</td>
+                <td >
+                <input class="check" checked="true" type="checkbox">
+                </td>
+
+            </tr>
+
+            <tr>
+
+
+            </tr>
+
+        </table>
+            </form>
+        </div>
+    </div>
+
+
+    <section id="table2">
+        <table>
+            <tr>
+                <td>क्र.सं		</td>
+                <td>उपनाम</td>
+                <td>हटाएँ</td>
+            </tr>
+        </table>
+
+    </section>
+    <div class="table2">
+        <form action="">
+            <table class="personal_table">
+                <tr>
+                    <td>संबंध प्रकार</td>
+                    <td><select name="" id="">
+                    <option value="0"> -----चयन-----</option>
+                    <option value="7">अभिभावक</option>
+                    <option value="8">पति</option>
+                    <option value="9">पत्नी</option>
+                    <option value="5">पिता</option>
+                    <option value="6">मां</option>
+                    </select></td>
+                </tr>
+                    <tr>
+                    <td>संबंधी का नाम</td>
+                    <td><input type="text" placeholder="संबंधी का नाम"></td>
+                </tr>
+                    <tr>
+                    <td>संबंधी का उपनाम</td>
+                    <td><input type="text" placeholder="संबंधी का उपनाम"></td>
+                </tr>
+                    <tr>
+                    <td>श्रेणी</td>
+                    <td><select name="" id="">
+                            <option value="0"> -----चयन-----</option>
+                                                    <option value="2">अनुसूचित जनजाति</option><option value="1">अनुसूचित जाति</option><option value="3">अन्य पिछड़ा वर्ग (ओबीसी)</option><option value="4">सामान्य</option>
+                    </select></td>
+                </tr>
+
+            </table>
+        </form>
+
+            <form action="">
+                <fieldset>
+                    <legend>
+                        आयु पैनल *
+                    </legend>
+                    <table class="personal_table">
+
+                <tr>
+                    <td>जन्म तिथि</td>
+                    <td><input type="date"></td>
+                </tr>
+                    <tr >
+                    <td >आयु (वर्ष/महीना)</td>
+                    <td style="display: flex; gap: 20px;" ><input style="width: 30%;" type="text" placeholder="महीना"><input style="width: 30%;" type="text" placeholder="वर्ष"></td>
+                </tr>
+                    <tr>
+                    <td>जन्म का वर्ष</td>
+                    <td><input type="text" placeholder="जन्म का वर्ष"></td>
+                </tr>
+                    <tr>
+                    <td>आयु सीमा(से - तक)</td>
+                    <td style="display: flex; gap: 3px;"><input  type="text" placeholder="आयु सीमा(से - तक)">
+                    <button>
+रीसेट करें</button></td>
+                </tr>
+
+            </table>
+                </fieldset>
+
+
+        </form>
+    </div>
+
+
+    <div class="empty_btn">
+        <button>
+रिक्त करें</button>
+    </div>
+
+    </body>
+</html>
