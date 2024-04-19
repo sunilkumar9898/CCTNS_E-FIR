@@ -1,11 +1,1241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Address OF injurd People</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #address {
+                display: flex;
+                justify-content: start;
+                font-size: 12px;
+            }
+
+            .address {
+                width: 100%;
+            }
+            .address table {
+                width: 90%;
+                border-spacing: 10px 5px;
+            }
+            .address table tr td:nth-child(1) {
+                background-color: #e0e6ff;
+                padding: 2px;
+            }
+
+            .address table tr td input {
+                padding: 5px;
+
+                border-radius: 2px;
+            }
+
+            .btn {
+                text-align: end;
+                padding-right: 20px;
+            }
+
+            .btn button {
+                border: 1px solid rgb(18, 146, 225);
+                color: rgb(19, 140, 239);
+                font-weight: 850;
+                padding: 2px;
+            }
+
+            #Table_address{
+                width: 100%;
+                margin-top: 20px;
+            }
+                #Table_address div  table{
+                width: 100%;
+
+            }
+                    #Table_address div  table tr th{
+                background-color: #2b6ac1;
+                padding:8px;
+                color: white;
+                font-weight: 800;
+
+            }
+
+            .table{
+                width: 100%;
+                text-align: center;
+            }
+
+             table  thead tr th{
+    padding: 20px;
+   }
+            @media (min-width: 220px) and (max-width: 420px) {
+                    #address {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+
+  .table thead {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
+
+  .table thead tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+
+    margin-bottom: .625em;
+  }
+   .table thead tr th{
+    padding: 20px;
+   }
+
+
+  .table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  .table td::before {
+
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <!-- स्थायी पता< -->
+        <h4>स्थायी पता</h4>
+        <section id="address">
+            <div class="address">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td>मकान सं.</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="00" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>गली का नाम</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="Narapura" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>कॉलोनी / इलाक़ा /क्षेत्र</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="Narapura" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ग्राम / नगर / शहर*</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="Narapura" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>तहसील / ब्लॉक / मंडल</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="Amer" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>वर्तमान पता*</td>
+                            <td class="present_address">
+                                <span>वर्तमान के लिए भी वही</span>
+                                <input type="radio" name="yes" value="" />हां
+                                <input type="radio" name="yes" />नहीं
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="address">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td>देश*</td>
+                            <td>
+                                <select
+                                    style="width: 60%; padding: 4px"
+                                    name=""
+                                    id=""
+                                    disabled="disabled">
+                                    <option value="80">भारत</option>
+                                    <option value="7">अंगोला</option>
+                                    <option value="12">अजरबैजन</option>
+                                    <option value="216">अज्ञात</option>
+                                    <option value="6">अन्डोरा</option>
+                                    <option value="188">अपर वाल्टा</option>
+                                    <option value="2">अफगानिस्तान</option>
+                                    <option value="3">अफ्रीका</option>
+                                    <option value="1">अबुधाबी / दुबई</option>
+                                    <option value="8">अर्जेन्टिना</option>
+                                    <option value="5">अल्जीरिया</option>
+                                    <option value="4">अल्बेनिया</option>
+                                    <option value="87">आइवरी कॉस्ट</option>
+                                    <option value="79">आइसलैण्ड</option>
+                                    <option value="84">आयरलैंड</option>
+                                    <option value="9">आर्मीनिया</option>
+                                    <option value="11">आस्ट्रिया</option>
+                                    <option value="10">आस्ट्रेलिया</option>
+                                    <option value="209">इंग्लैंड</option>
+                                    <option value="51">इक्वाडोर</option>
+                                    <option value="85">इज्राइल</option>
+                                    <option value="86">इटली</option>
+                                    <option value="57">इथोपिया</option>
+                                    <option value="81">इन्डोनेशिया</option>
+                                    <option value="55">इरित्रा</option>
+                                    <option value="56">इस्तोनिया</option>
+                                    <option value="83">ईराक</option>
+                                    <option value="82">ईरान</option>
+                                    <option value="218">ईस्ट तिमुर</option>
+                                    <option value="190">उजवेकिस्तान</option>
+                                    <option value="95">उत्तर कोरिया</option>
+                                    <option value="217">
+                                        एण्टीगुआ बारबुडा
+                                    </option>
+                                    <option value="53">एलसाल्वाटडोर</option>
+                                    <option value="133">ओमान</option>
+                                    <option value="91">कजाखिस्तान</option>
+                                    <option value="143">कतार</option>
+                                    <option value="33">कनाड़ा</option>
+                                    <option value="31">कम्बोडिया</option>
+                                    <option value="41">कांगो</option>
+                                    <option value="94">किरीबती</option>
+                                    <option value="93">किर्गीजिया</option>
+                                    <option value="92">कीनिया</option>
+                                    <option value="97">कुबैत</option>
+                                    <option value="34">केप वर्डे</option>
+                                    <option value="32">कैमेरुन</option>
+                                    <option value="40">कोमोरॉस</option>
+                                    <option value="39">कोलम्बिया</option>
+                                    <option value="42">कोस्टारिका</option>
+                                    <option value="44">क्यूबा</option>
+                                    <option value="43">क्रोएशिया</option>
+                                    <option value="64">गबोन</option>
+                                    <option value="72">गिनी</option>
+                                    <option value="73">गिनी विसाउ</option>
+                                    <option value="74">गुयाना</option>
+                                    <option value="219">ग्रीन लैंड</option>
+                                    <option value="69">ग्रीस</option>
+                                    <option value="70">ग्रेनाडा</option>
+                                    <option value="71">ग्वातेमाला</option>
+                                    <option value="68">घाना</option>
+                                    <option value="36">चाड</option>
+                                    <option value="37">चिली</option>
+                                    <option value="38">चीन</option>
+                                    <option value="46">चेक रिपब्लिक</option>
+                                    <option value="88">जमैका</option>
+                                    <option value="67">जर्मनी</option>
+                                    <option value="89">जापान</option>
+                                    <option value="203">जाम्बिया</option>
+                                    <option value="202">जायरे</option>
+                                    <option value="66">जार्जिया</option>
+                                    <option value="90">जार्डन</option>
+                                    <option value="204">जिम्बाबवे</option>
+                                    <option value="177">टोंगा</option>
+                                    <option value="176">टोगो</option>
+                                    <option value="179">ट्यूनिशिया</option>
+                                    <option value="178">
+                                        ट्रीनीडाड एण्ड तोबागो
+                                    </option>
+                                    <option value="48">डिजिबौती</option>
+                                    <option value="47">डेनमार्क</option>
+                                    <option value="50">डोमिनिक रिपब्लिक</option>
+                                    <option value="49">डोमिनिका</option>
+                                    <option value="172">तंजानिया</option>
+                                    <option value="173">तस्मानिया</option>
+                                    <option value="170">ताइवान</option>
+                                    <option value="171">ताजीकिस्तान</option>
+                                    <option value="175">तिब्बत</option>
+                                    <option value="181">तुर्की</option>
+                                    <option value="180">तुर्कीमानिस्तान</option>
+                                    <option value="182">तुवाली</option>
+                                    <option value="174">थाईलैण्ड</option>
+                                    <option value="158">दक्षिण अफ्रिका</option>
+                                    <option value="96">दक्षिण कोरिया</option>
+                                    <option value="65">दी गामिबिया</option>
+                                    <option value="130">नाइजर</option>
+                                    <option value="59">
+                                        नाइजीरिया का राज्य संघ
+                                    </option>
+                                    <option value="124">नामीबिया</option>
+                                    <option value="132">नार्वे</option>
+                                    <option value="129">निकारागुआ</option>
+                                    <option value="127">
+                                        नीदर लैण्ड एन्टाइल्स
+                                    </option>
+                                    <option value="126">नीदर लैण्डस</option>
+                                    <option value="125">नेपाल</option>
+                                    <option value="128">न्यूजीलैण्ड</option>
+                                    <option value="131">ऩाइजीरिया</option>
+                                    <option value="135">पनामा</option>
+                                    <option value="134">पाकिस्तान</option>
+                                    <option value="136">पापुआ न्यु गिनी</option>
+                                    <option value="137">पारागुवै</option>
+                                    <option value="141">पुर्तगाल</option>
+                                    <option value="138">पैरु</option>
+                                    <option value="140">पोलैण्ड</option>
+                                    <option value="142">प्यूर्टोरिको</option>
+                                    <option value="58">
+                                        फाल्क लैण्ड आइसलैण्ड
+                                    </option>
+                                    <option value="61">फिनलैण्ड</option>
+                                    <option value="220">फिलिस्तीन</option>
+                                    <option value="139">फिलीपिन्स</option>
+                                    <option value="60">फीजी</option>
+                                    <option value="62">फ्रांस</option>
+                                    <option value="63">
+                                        फ्रेंच पालिनीशिया
+                                    </option>
+                                    <option value="15">बंग्लादेश</option>
+                                    <option value="29">बरकिना</option>
+                                    <option value="14">बहरेन</option>
+                                    <option value="13">बहामास</option>
+                                    <option value="16">बार्बादोस</option>
+                                    <option value="30">बुरुन्डी</option>
+                                    <option value="28">बुल्गारिया</option>
+                                    <option value="18">बेनिन</option>
+                                    <option value="207">बेनिन</option>
+                                    <option value="20">बेरमुडा</option>
+                                    <option value="17">बेलारुस</option>
+                                    <option value="205">बेलारूस</option>
+                                    <option value="206">बेलीज</option>
+                                    <option value="19">बेल्जियम</option>
+                                    <option value="24">बोतस्वाना</option>
+                                    <option value="22">बोलीविया</option>
+                                    <option value="23">
+                                        बोस्निया &ndash; हर्जेगोविना
+                                    </option>
+                                    <option value="25">ब्राजील</option>
+                                    <option value="26">ब्रिटिश होन्डुरस</option>
+                                    <option value="208">ब्रिटेन</option>
+                                    <option value="27">ब्रूनेई</option>
+                                    <option value="21">भूटान</option>
+                                    <option value="54">
+                                        भूम्ध्यरेखीय गिनी
+                                    </option>
+                                    <option value="119">मंगोलिया</option>
+                                    <option value="109">मलाया</option>
+                                    <option value="108">मलावी</option>
+                                    <option value="110">मलेशिया</option>
+                                    <option value="122">मस्कट</option>
+                                    <option value="107">मादागास्कर</option>
+                                    <option value="111">मालदीव</option>
+                                    <option value="112">माली</option>
+                                    <option value="113">माल्टा</option>
+                                    <option value="52">मिश्र</option>
+                                    <option value="116">मैक्सिको</option>
+                                    <option value="210">मैसेडोनिया</option>
+                                    <option value="212">मोंटेनेग्रो</option>
+                                    <option value="121">मोजाम्बीक</option>
+                                    <option value="118">मोनाको</option>
+                                    <option value="120">मोरक्को</option>
+                                    <option value="114">मोरीटेनिया</option>
+                                    <option value="117">मोल्डाविया</option>
+                                    <option value="211">मोल्दोवा</option>
+                                    <option value="115">मौरीटियस</option>
+                                    <option value="123">म्यांमार</option>
+                                    <option value="199">यमन</option>
+                                    <option value="201">यूकोन</option>
+                                    <option value="184">यूक्रेन</option>
+                                    <option value="183">यूगान्डा</option>
+                                    <option value="200">यूगोस्लाविया</option>
+                                    <option value="186">
+                                        यूनाइटेड किंगडम (यू के)
+                                    </option>
+                                    <option value="189">यूरुगुवै</option>
+                                    <option value="146">रवान्डा</option>
+                                    <option value="145">रुस राज्य संघ</option>
+                                    <option value="144">रोमानिया</option>
+                                    <option value="101">लसोथो</option>
+                                    <option value="102">लाइबेरिया</option>
+                                    <option value="98">लाओस</option>
+                                    <option value="106">लाक्समवर्ग</option>
+                                    <option value="99">लाटविया</option>
+                                    <option value="104">लिचटेन्स्टीन</option>
+                                    <option value="105">लिथुनिया</option>
+                                    <option value="103">लिबिया</option>
+                                    <option value="100">लेबनान</option>
+                                    <option value="191">वनुअटू</option>
+                                    <option value="194">वियतनाम</option>
+                                    <option value="192">वेटिकन सिटी</option>
+                                    <option value="193">वेनेजुएला</option>
+                                    <option value="215">वेल्स</option>
+                                    <option value="196">वेस्टइंडिज</option>
+                                    <option value="197">
+                                        वेस्टर्न आस्ट्रेलिया
+                                    </option>
+                                    <option value="198">वेस्टर्न सामोआ</option>
+                                    <option value="195">
+                                        वैलिस एवं फुटुना आइलैण्ड
+                                    </option>
+                                    <option value="160">श्री लंका</option>
+                                    <option value="185">
+                                        संयुक्त अरब अमीरात
+                                    </option>
+                                    <option value="187">
+                                        संयुक्त राज्य अमेरिका
+                                    </option>
+                                    <option value="149">सउदी अरब</option>
+                                    <option value="214">सर्बिया</option>
+                                    <option value="45">साइप्रस</option>
+                                    <option value="148">
+                                        सावटोम और प्रिन्सिप
+                                    </option>
+                                    <option value="153">सिंगापुर</option>
+                                    <option value="152">सियारालिओन</option>
+                                    <option value="169">सीरिया</option>
+                                    <option value="164">सुडान</option>
+                                    <option value="165">सुरीनाम</option>
+                                    <option value="161">
+                                        सेंट कीट्स &ndash; नेविस
+                                    </option>
+                                    <option value="162">सेंट लुसिया</option>
+                                    <option value="163">सेंट विन्सेन्ट</option>
+                                    <option value="147">सेनमेरिनो</option>
+                                    <option value="150">सेनेगल</option>
+                                    <option value="35">
+                                        सेन्ट्रल अफ्रीकन रिपब्लिक
+                                    </option>
+                                    <option value="151">सेशेल्स</option>
+                                    <option value="157">सोमालिया</option>
+                                    <option value="156">सोलोमन आइसलैण्ड</option>
+                                    <option value="213">स्कॉटलैंड</option>
+                                    <option value="159">स्पेन</option>
+                                    <option value="154">स्लोवेकिया</option>
+                                    <option value="155">स्लोवेनिया</option>
+                                    <option value="166">स्वाजी लैण्ड</option>
+                                    <option value="168">स्वीट्जर लैण्ड</option>
+                                    <option value="167">स्वीडन</option>
+                                    <option value="78">हंगरी</option>
+                                    <option value="75">हैती</option>
+                                    <option value="77">हॉग &ndash; कांग</option>
+                                    <option value="76">होन्थुरस</option>
+                                    <!--form:options /-->
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>राज्य*</td>
+                            <td>
+                                <select
+                                    style="width: 60%; padding: 4px"
+                                    id="state"
+                                    disabled="disabled">
+                                    <option value="0">-----चयन-----</option>
+                                    <option value="1">अंदमान और निकोबार</option>
+                                    <option value="36">अन आई ए</option>
+                                    <option value="3">अरुणाचल प्रदेश</option>
+                                    <option value="4">असम</option>
+                                    <option value="2">आन्ध्रा प्रदेश</option>
+                                    <option value="31">उत्तर प्रदेश</option>
+                                    <option value="35">उत्तराखंड</option>
+                                    <option value="24">ओडिशा</option>
+                                    <option value="16">कर्नाटक</option>
+                                    <option value="15">केरल</option>
+                                    <option value="11">गुजरात</option>
+                                    <option value="10">गोवा</option>
+                                    <option value="6">चंडीगढ़</option>
+                                    <option value="33">छत्तीसगढ़</option>
+                                    <option value="14">जम्मू और कश्मीर</option>
+                                    <option value="34">झारखंड़</option>
+                                    <option value="29">तमिलनाडु</option>
+                                    <option value="37">तेलंगाना</option>
+                                    <option value="30">त्रिपुरा</option>
+                                    <option value="7">दमन और दीव</option>
+                                    <option value="9">दादर और नगर हवेली</option>
+                                    <option value="8">दिल्ली</option>
+                                    <option value="23">नागालैन्ड़</option>
+                                    <option value="25">पंजाब</option>
+                                    <option value="32">पश्चिम बंगाल</option>
+                                    <option value="26">पांड़िचेरी</option>
+                                    <option value="5">बिहार</option>
+                                    <option value="20">मणिपुर</option>
+                                    <option value="21">मध्य प्रदेश</option>
+                                    <option value="19">महाराष्ट्र</option>
+                                    <option value="22">मिजोरम</option>
+                                    <option value="18">मेघालय</option>
+                                    <option value="27" selected="selected">
+                                        राजस्थान
+                                    </option>
+                                    <option value="17">लक्ष्यदीप</option>
+                                    <option value="28">सिक्किम</option>
+                                    <option value="13">हरियाणा</option>
+                                    <option value="12">हिमाचल प्रदेश</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>जिला*</td>
+                            <td>
+                                <select
+                                    id="district"
+                                    style="width: 60%; padding: 4px">
+                                    <option value="0">-----चयन-----</option>
+                                    <option value="27568">टोंक</option>
+                                    <option value="27576">राजसमन्&zwj;द</option>
+                                    <option value="27541">अजमेर</option>
+                                    <option value="27501">अनूपगढ़</option>
+                                    <option value="27542">अलवर</option>
+                                    <option value="27569">उदयपुर</option>
+                                    <option value="27999">
+                                        उप-आयुक्त (अपराध) आयुक्तालय जोधपुर
+                                    </option>
+                                    <option value="27998">
+                                        उप-आयुक्त पुलिस -अपराध-आयुक्तालय जयपुर
+                                    </option>
+                                    <option value="27552">
+                                        एटीएस एवं एसओजी
+                                    </option>
+                                    <option value="27831">
+                                        एस सी आर बी, जयपुर सिटी
+                                    </option>
+                                    <option value="27577">करौली</option>
+                                    <option value="27508">केकड़ी</option>
+                                    <option value="27509">
+                                        कोटपूतली-बहरोड़
+                                    </option>
+                                    <option value="27572">कोटा ग्रामीण</option>
+                                    <option value="27562">कोटा शहर</option>
+                                    <option value="27510">खैरथल-तिजारा</option>
+                                    <option value="27554">गंगा नगर</option>
+                                    <option value="27507">गंगापुर सिटी</option>
+                                    <option value="27550">चित्तौड़गढ़</option>
+                                    <option value="27551">चुरु</option>
+                                    <option value="27997">
+                                        जयपुर (पश्चिम)
+                                    </option>
+                                    <option value="27571">जयपुर ग्रामीण</option>
+                                    <option value="27540">जयपुर मेट्रो</option>
+                                    <option value="27556">
+                                        जयपुर शहर (उत्तर)
+                                    </option>
+                                    <option value="27878">
+                                        जयपुर शहर (दक्षिण)
+                                    </option>
+                                    <option value="27829">जयपुर सिटी</option>
+                                    <option value="27877">
+                                        जयपुर सिटी (पूर्व)
+                                    </option>
+                                    <option value="27558">जालोर</option>
+                                    <option value="27557">जैसलमेर</option>
+                                    <option value="27879">
+                                        जोधपुर ग्रामीण
+                                    </option>
+                                    <option value="27833">
+                                        जोधपुर सिटी पश्चिम
+                                    </option>
+                                    <option value="27832">
+                                        जोधपुर सिटी पूर्व
+                                    </option>
+                                    <option value="27559">झालावाड़</option>
+                                    <option value="27560" selected="selected">
+                                        झुँझुनू
+                                    </option>
+                                    <option value="27504">डीग</option>
+                                    <option value="27505">
+                                        डीडवाना-कुचामन
+                                    </option>
+                                    <option value="27553">डूंगरपूर</option>
+                                    <option value="27506">दूदू</option>
+                                    <option value="27574">दौसा</option>
+                                    <option value="27570">धौलपुर</option>
+                                    <option value="27563">नागौर</option>
+                                    <option value="27511">नीम का थाना</option>
+                                    <option value="27564">पाली</option>
+                                    <option value="27876">प्रतापगढ़</option>
+                                    <option value="27512">फलौदी</option>
+                                    <option value="27544">बांसवाड़ा</option>
+                                    <option value="27545">बाड़मेर</option>
+                                    <option value="27573">बाराँ</option>
+                                    <option value="27502">बालोतरा</option>
+                                    <option value="27548">बीकानेर</option>
+                                    <option value="27549">बूंदी</option>
+                                    <option value="27503">ब्&zwj;यावर</option>
+                                    <option value="27546">भरतपुर</option>
+                                    <option value="27578">भिवाड़ी</option>
+                                    <option value="27547">भीलवाड़ा</option>
+                                    <option value="27880">
+                                        शासकीय रेलवे पुलिस जोधपुर
+                                    </option>
+                                    <option value="27830">
+                                        शासकीय रेलवे पुलिस, अजमेर
+                                    </option>
+                                    <option value="27515">शाहपुरा</option>
+                                    <option value="27513">सलूम्&zwj;बर</option>
+                                    <option value="27567">सवाई माधोपुर</option>
+                                    <option value="27514">सांचौर</option>
+                                    <option value="27566">सिरोही</option>
+                                    <option value="27539">
+                                        सी.आई.डी. सुरक्षा
+                                    </option>
+                                    <option value="27565">सीकर</option>
+                                    <option value="27575">हनुमानगढ़</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>पुलिस स्टेशन</td>
+                            <td>
+                                <select
+                                    id="policestation"
+                                    style="width: 60%; padding: 4px">
+                                    <option value="0">-----चयन-----</option>
+                                    <option value="27560012">
+                                        कोतवाली झुन्&zwj;झुनू
+                                    </option>
+                                    <option value="27560010">गुढा</option>
+                                    <option value="27560042">गोठड़ा</option>
+                                    <option value="27560007">चिड़ावा</option>
+                                    <option value="27560040">धनूरी</option>
+                                    <option value="27560025">नवलगढ़</option>
+                                    <option value="27560038">पचेरीकलां</option>
+                                    <option value="27560030">पिलानी</option>
+                                    <option value="27560003">बगड़</option>
+                                    <option value="27560004">बिसाऊ</option>
+                                    <option value="27560005">बुहाना</option>
+                                    <option value="27560021">मण्डावा</option>
+                                    <option value="27560037">मण्ड्रेला</option>
+                                    <option value="27560020">मलसीसर</option>
+                                    <option value="27560001">
+                                        महिला थाना(झुँझुनू)
+                                    </option>
+                                    <option value="27560022">मुकन्दगढ़</option>
+                                    <option value="27560031">
+                                        सदर झुन्&zwj;झुनू
+                                    </option>
+                                    <option value="27560041">
+                                        साईबर पुलिस थाना(झुँझुनू)
+                                    </option>
+                                    <option value="27560033">सिंघाना</option>
+                                    <option
+                                        value="27560032"
+                                        selected="selected">
+                                        सुरजगढ़
+                                    </option>
+                                    <option value="27560044">सुलताना</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>पिन कोड</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    placeholder="पिन कोड" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+        <!-- वर्तमान पता -->
+        <h4>वर्तमान पता</h4>
+        <section id="address">
+            <div class="address">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td>मकान सं.</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="00" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>गली का नाम</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="Narapura" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>कॉलोनी / इलाक़ा /क्षेत्र</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="Narapura" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ग्राम / नगर / शहर*</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="Narapura" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>तहसील / ब्लॉक / मंडल</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    value="Amer" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="address">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td>देश*</td>
+                            <td>
+                                <select
+                                    style="width: 60%; padding: 4px"
+                                    name=""
+                                    id=""
+                                    disabled="disabled">
+                                    <option value="80">भारत</option>
+                                    <option value="7">अंगोला</option>
+                                    <option value="12">अजरबैजन</option>
+                                    <option value="216">अज्ञात</option>
+                                    <option value="6">अन्डोरा</option>
+                                    <option value="188">अपर वाल्टा</option>
+                                    <option value="2">अफगानिस्तान</option>
+                                    <option value="3">अफ्रीका</option>
+                                    <option value="1">अबुधाबी / दुबई</option>
+                                    <option value="8">अर्जेन्टिना</option>
+                                    <option value="5">अल्जीरिया</option>
+                                    <option value="4">अल्बेनिया</option>
+                                    <option value="87">आइवरी कॉस्ट</option>
+                                    <option value="79">आइसलैण्ड</option>
+                                    <option value="84">आयरलैंड</option>
+                                    <option value="9">आर्मीनिया</option>
+                                    <option value="11">आस्ट्रिया</option>
+                                    <option value="10">आस्ट्रेलिया</option>
+                                    <option value="209">इंग्लैंड</option>
+                                    <option value="51">इक्वाडोर</option>
+                                    <option value="85">इज्राइल</option>
+                                    <option value="86">इटली</option>
+                                    <option value="57">इथोपिया</option>
+                                    <option value="81">इन्डोनेशिया</option>
+                                    <option value="55">इरित्रा</option>
+                                    <option value="56">इस्तोनिया</option>
+                                    <option value="83">ईराक</option>
+                                    <option value="82">ईरान</option>
+                                    <option value="218">ईस्ट तिमुर</option>
+                                    <option value="190">उजवेकिस्तान</option>
+                                    <option value="95">उत्तर कोरिया</option>
+                                    <option value="217">
+                                        एण्टीगुआ बारबुडा
+                                    </option>
+                                    <option value="53">एलसाल्वाटडोर</option>
+                                    <option value="133">ओमान</option>
+                                    <option value="91">कजाखिस्तान</option>
+                                    <option value="143">कतार</option>
+                                    <option value="33">कनाड़ा</option>
+                                    <option value="31">कम्बोडिया</option>
+                                    <option value="41">कांगो</option>
+                                    <option value="94">किरीबती</option>
+                                    <option value="93">किर्गीजिया</option>
+                                    <option value="92">कीनिया</option>
+                                    <option value="97">कुबैत</option>
+                                    <option value="34">केप वर्डे</option>
+                                    <option value="32">कैमेरुन</option>
+                                    <option value="40">कोमोरॉस</option>
+                                    <option value="39">कोलम्बिया</option>
+                                    <option value="42">कोस्टारिका</option>
+                                    <option value="44">क्यूबा</option>
+                                    <option value="43">क्रोएशिया</option>
+                                    <option value="64">गबोन</option>
+                                    <option value="72">गिनी</option>
+                                    <option value="73">गिनी विसाउ</option>
+                                    <option value="74">गुयाना</option>
+                                    <option value="219">ग्रीन लैंड</option>
+                                    <option value="69">ग्रीस</option>
+                                    <option value="70">ग्रेनाडा</option>
+                                    <option value="71">ग्वातेमाला</option>
+                                    <option value="68">घाना</option>
+                                    <option value="36">चाड</option>
+                                    <option value="37">चिली</option>
+                                    <option value="38">चीन</option>
+                                    <option value="46">चेक रिपब्लिक</option>
+                                    <option value="88">जमैका</option>
+                                    <option value="67">जर्मनी</option>
+                                    <option value="89">जापान</option>
+                                    <option value="203">जाम्बिया</option>
+                                    <option value="202">जायरे</option>
+                                    <option value="66">जार्जिया</option>
+                                    <option value="90">जार्डन</option>
+                                    <option value="204">जिम्बाबवे</option>
+                                    <option value="177">टोंगा</option>
+                                    <option value="176">टोगो</option>
+                                    <option value="179">ट्यूनिशिया</option>
+                                    <option value="178">
+                                        ट्रीनीडाड एण्ड तोबागो
+                                    </option>
+                                    <option value="48">डिजिबौती</option>
+                                    <option value="47">डेनमार्क</option>
+                                    <option value="50">डोमिनिक रिपब्लिक</option>
+                                    <option value="49">डोमिनिका</option>
+                                    <option value="172">तंजानिया</option>
+                                    <option value="173">तस्मानिया</option>
+                                    <option value="170">ताइवान</option>
+                                    <option value="171">ताजीकिस्तान</option>
+                                    <option value="175">तिब्बत</option>
+                                    <option value="181">तुर्की</option>
+                                    <option value="180">तुर्कीमानिस्तान</option>
+                                    <option value="182">तुवाली</option>
+                                    <option value="174">थाईलैण्ड</option>
+                                    <option value="158">दक्षिण अफ्रिका</option>
+                                    <option value="96">दक्षिण कोरिया</option>
+                                    <option value="65">दी गामिबिया</option>
+                                    <option value="130">नाइजर</option>
+                                    <option value="59">
+                                        नाइजीरिया का राज्य संघ
+                                    </option>
+                                    <option value="124">नामीबिया</option>
+                                    <option value="132">नार्वे</option>
+                                    <option value="129">निकारागुआ</option>
+                                    <option value="127">
+                                        नीदर लैण्ड एन्टाइल्स
+                                    </option>
+                                    <option value="126">नीदर लैण्डस</option>
+                                    <option value="125">नेपाल</option>
+                                    <option value="128">न्यूजीलैण्ड</option>
+                                    <option value="131">ऩाइजीरिया</option>
+                                    <option value="135">पनामा</option>
+                                    <option value="134">पाकिस्तान</option>
+                                    <option value="136">पापुआ न्यु गिनी</option>
+                                    <option value="137">पारागुवै</option>
+                                    <option value="141">पुर्तगाल</option>
+                                    <option value="138">पैरु</option>
+                                    <option value="140">पोलैण्ड</option>
+                                    <option value="142">प्यूर्टोरिको</option>
+                                    <option value="58">
+                                        फाल्क लैण्ड आइसलैण्ड
+                                    </option>
+                                    <option value="61">फिनलैण्ड</option>
+                                    <option value="220">फिलिस्तीन</option>
+                                    <option value="139">फिलीपिन्स</option>
+                                    <option value="60">फीजी</option>
+                                    <option value="62">फ्रांस</option>
+                                    <option value="63">
+                                        फ्रेंच पालिनीशिया
+                                    </option>
+                                    <option value="15">बंग्लादेश</option>
+                                    <option value="29">बरकिना</option>
+                                    <option value="14">बहरेन</option>
+                                    <option value="13">बहामास</option>
+                                    <option value="16">बार्बादोस</option>
+                                    <option value="30">बुरुन्डी</option>
+                                    <option value="28">बुल्गारिया</option>
+                                    <option value="18">बेनिन</option>
+                                    <option value="207">बेनिन</option>
+                                    <option value="20">बेरमुडा</option>
+                                    <option value="17">बेलारुस</option>
+                                    <option value="205">बेलारूस</option>
+                                    <option value="206">बेलीज</option>
+                                    <option value="19">बेल्जियम</option>
+                                    <option value="24">बोतस्वाना</option>
+                                    <option value="22">बोलीविया</option>
+                                    <option value="23">
+                                        बोस्निया &ndash; हर्जेगोविना
+                                    </option>
+                                    <option value="25">ब्राजील</option>
+                                    <option value="26">ब्रिटिश होन्डुरस</option>
+                                    <option value="208">ब्रिटेन</option>
+                                    <option value="27">ब्रूनेई</option>
+                                    <option value="21">भूटान</option>
+                                    <option value="54">
+                                        भूम्ध्यरेखीय गिनी
+                                    </option>
+                                    <option value="119">मंगोलिया</option>
+                                    <option value="109">मलाया</option>
+                                    <option value="108">मलावी</option>
+                                    <option value="110">मलेशिया</option>
+                                    <option value="122">मस्कट</option>
+                                    <option value="107">मादागास्कर</option>
+                                    <option value="111">मालदीव</option>
+                                    <option value="112">माली</option>
+                                    <option value="113">माल्टा</option>
+                                    <option value="52">मिश्र</option>
+                                    <option value="116">मैक्सिको</option>
+                                    <option value="210">मैसेडोनिया</option>
+                                    <option value="212">मोंटेनेग्रो</option>
+                                    <option value="121">मोजाम्बीक</option>
+                                    <option value="118">मोनाको</option>
+                                    <option value="120">मोरक्को</option>
+                                    <option value="114">मोरीटेनिया</option>
+                                    <option value="117">मोल्डाविया</option>
+                                    <option value="211">मोल्दोवा</option>
+                                    <option value="115">मौरीटियस</option>
+                                    <option value="123">म्यांमार</option>
+                                    <option value="199">यमन</option>
+                                    <option value="201">यूकोन</option>
+                                    <option value="184">यूक्रेन</option>
+                                    <option value="183">यूगान्डा</option>
+                                    <option value="200">यूगोस्लाविया</option>
+                                    <option value="186">
+                                        यूनाइटेड किंगडम (यू के)
+                                    </option>
+                                    <option value="189">यूरुगुवै</option>
+                                    <option value="146">रवान्डा</option>
+                                    <option value="145">रुस राज्य संघ</option>
+                                    <option value="144">रोमानिया</option>
+                                    <option value="101">लसोथो</option>
+                                    <option value="102">लाइबेरिया</option>
+                                    <option value="98">लाओस</option>
+                                    <option value="106">लाक्समवर्ग</option>
+                                    <option value="99">लाटविया</option>
+                                    <option value="104">लिचटेन्स्टीन</option>
+                                    <option value="105">लिथुनिया</option>
+                                    <option value="103">लिबिया</option>
+                                    <option value="100">लेबनान</option>
+                                    <option value="191">वनुअटू</option>
+                                    <option value="194">वियतनाम</option>
+                                    <option value="192">वेटिकन सिटी</option>
+                                    <option value="193">वेनेजुएला</option>
+                                    <option value="215">वेल्स</option>
+                                    <option value="196">वेस्टइंडिज</option>
+                                    <option value="197">
+                                        वेस्टर्न आस्ट्रेलिया
+                                    </option>
+                                    <option value="198">वेस्टर्न सामोआ</option>
+                                    <option value="195">
+                                        वैलिस एवं फुटुना आइलैण्ड
+                                    </option>
+                                    <option value="160">श्री लंका</option>
+                                    <option value="185">
+                                        संयुक्त अरब अमीरात
+                                    </option>
+                                    <option value="187">
+                                        संयुक्त राज्य अमेरिका
+                                    </option>
+                                    <option value="149">सउदी अरब</option>
+                                    <option value="214">सर्बिया</option>
+                                    <option value="45">साइप्रस</option>
+                                    <option value="148">
+                                        सावटोम और प्रिन्सिप
+                                    </option>
+                                    <option value="153">सिंगापुर</option>
+                                    <option value="152">सियारालिओन</option>
+                                    <option value="169">सीरिया</option>
+                                    <option value="164">सुडान</option>
+                                    <option value="165">सुरीनाम</option>
+                                    <option value="161">
+                                        सेंट कीट्स &ndash; नेविस
+                                    </option>
+                                    <option value="162">सेंट लुसिया</option>
+                                    <option value="163">सेंट विन्सेन्ट</option>
+                                    <option value="147">सेनमेरिनो</option>
+                                    <option value="150">सेनेगल</option>
+                                    <option value="35">
+                                        सेन्ट्रल अफ्रीकन रिपब्लिक
+                                    </option>
+                                    <option value="151">सेशेल्स</option>
+                                    <option value="157">सोमालिया</option>
+                                    <option value="156">सोलोमन आइसलैण्ड</option>
+                                    <option value="213">स्कॉटलैंड</option>
+                                    <option value="159">स्पेन</option>
+                                    <option value="154">स्लोवेकिया</option>
+                                    <option value="155">स्लोवेनिया</option>
+                                    <option value="166">स्वाजी लैण्ड</option>
+                                    <option value="168">स्वीट्जर लैण्ड</option>
+                                    <option value="167">स्वीडन</option>
+                                    <option value="78">हंगरी</option>
+                                    <option value="75">हैती</option>
+                                    <option value="77">हॉग &ndash; कांग</option>
+                                    <option value="76">होन्थुरस</option>
+                                    <!--form:options /-->
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>राज्य*</td>
+                            <td>
+                                <select
+                                    style="width: 60%; padding: 4px"
+                                    id="state"
+                                    disabled="disabled">
+                                    <option value="0">-----चयन-----</option>
+                                    <option value="1">अंदमान और निकोबार</option>
+                                    <option value="36">अन आई ए</option>
+                                    <option value="3">अरुणाचल प्रदेश</option>
+                                    <option value="4">असम</option>
+                                    <option value="2">आन्ध्रा प्रदेश</option>
+                                    <option value="31">उत्तर प्रदेश</option>
+                                    <option value="35">उत्तराखंड</option>
+                                    <option value="24">ओडिशा</option>
+                                    <option value="16">कर्नाटक</option>
+                                    <option value="15">केरल</option>
+                                    <option value="11">गुजरात</option>
+                                    <option value="10">गोवा</option>
+                                    <option value="6">चंडीगढ़</option>
+                                    <option value="33">छत्तीसगढ़</option>
+                                    <option value="14">जम्मू और कश्मीर</option>
+                                    <option value="34">झारखंड़</option>
+                                    <option value="29">तमिलनाडु</option>
+                                    <option value="37">तेलंगाना</option>
+                                    <option value="30">त्रिपुरा</option>
+                                    <option value="7">दमन और दीव</option>
+                                    <option value="9">दादर और नगर हवेली</option>
+                                    <option value="8">दिल्ली</option>
+                                    <option value="23">नागालैन्ड़</option>
+                                    <option value="25">पंजाब</option>
+                                    <option value="32">पश्चिम बंगाल</option>
+                                    <option value="26">पांड़िचेरी</option>
+                                    <option value="5">बिहार</option>
+                                    <option value="20">मणिपुर</option>
+                                    <option value="21">मध्य प्रदेश</option>
+                                    <option value="19">महाराष्ट्र</option>
+                                    <option value="22">मिजोरम</option>
+                                    <option value="18">मेघालय</option>
+                                    <option value="27" selected="selected">
+                                        राजस्थान
+                                    </option>
+                                    <option value="17">लक्ष्यदीप</option>
+                                    <option value="28">सिक्किम</option>
+                                    <option value="13">हरियाणा</option>
+                                    <option value="12">हिमाचल प्रदेश</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>जिला*</td>
+                            <td>
+                                <select
+                                    id="district"
+                                    style="width: 60%; padding: 4px">
+                                    <option value="0">-----चयन-----</option>
+                                    <option value="27568">टोंक</option>
+                                    <option value="27576">राजसमन्&zwj;द</option>
+                                    <option value="27541">अजमेर</option>
+                                    <option value="27501">अनूपगढ़</option>
+                                    <option value="27542">अलवर</option>
+                                    <option value="27569">उदयपुर</option>
+                                    <option value="27999">
+                                        उप-आयुक्त (अपराध) आयुक्तालय जोधपुर
+                                    </option>
+                                    <option value="27998">
+                                        उप-आयुक्त पुलिस -अपराध-आयुक्तालय जयपुर
+                                    </option>
+                                    <option value="27552">
+                                        एटीएस एवं एसओजी
+                                    </option>
+                                    <option value="27831">
+                                        एस सी आर बी, जयपुर सिटी
+                                    </option>
+                                    <option value="27577">करौली</option>
+                                    <option value="27508">केकड़ी</option>
+                                    <option value="27509">
+                                        कोटपूतली-बहरोड़
+                                    </option>
+                                    <option value="27572">कोटा ग्रामीण</option>
+                                    <option value="27562">कोटा शहर</option>
+                                    <option value="27510">खैरथल-तिजारा</option>
+                                    <option value="27554">गंगा नगर</option>
+                                    <option value="27507">गंगापुर सिटी</option>
+                                    <option value="27550">चित्तौड़गढ़</option>
+                                    <option value="27551">चुरु</option>
+                                    <option value="27997">
+                                        जयपुर (पश्चिम)
+                                    </option>
+                                    <option value="27571">जयपुर ग्रामीण</option>
+                                    <option value="27540">जयपुर मेट्रो</option>
+                                    <option value="27556">
+                                        जयपुर शहर (उत्तर)
+                                    </option>
+                                    <option value="27878">
+                                        जयपुर शहर (दक्षिण)
+                                    </option>
+                                    <option value="27829">जयपुर सिटी</option>
+                                    <option value="27877">
+                                        जयपुर सिटी (पूर्व)
+                                    </option>
+                                    <option value="27558">जालोर</option>
+                                    <option value="27557">जैसलमेर</option>
+                                    <option value="27879">
+                                        जोधपुर ग्रामीण
+                                    </option>
+                                    <option value="27833">
+                                        जोधपुर सिटी पश्चिम
+                                    </option>
+                                    <option value="27832">
+                                        जोधपुर सिटी पूर्व
+                                    </option>
+                                    <option value="27559">झालावाड़</option>
+                                    <option value="27560" selected="selected">
+                                        झुँझुनू
+                                    </option>
+                                    <option value="27504">डीग</option>
+                                    <option value="27505">
+                                        डीडवाना-कुचामन
+                                    </option>
+                                    <option value="27553">डूंगरपूर</option>
+                                    <option value="27506">दूदू</option>
+                                    <option value="27574">दौसा</option>
+                                    <option value="27570">धौलपुर</option>
+                                    <option value="27563">नागौर</option>
+                                    <option value="27511">नीम का थाना</option>
+                                    <option value="27564">पाली</option>
+                                    <option value="27876">प्रतापगढ़</option>
+                                    <option value="27512">फलौदी</option>
+                                    <option value="27544">बांसवाड़ा</option>
+                                    <option value="27545">बाड़मेर</option>
+                                    <option value="27573">बाराँ</option>
+                                    <option value="27502">बालोतरा</option>
+                                    <option value="27548">बीकानेर</option>
+                                    <option value="27549">बूंदी</option>
+                                    <option value="27503">ब्&zwj;यावर</option>
+                                    <option value="27546">भरतपुर</option>
+                                    <option value="27578">भिवाड़ी</option>
+                                    <option value="27547">भीलवाड़ा</option>
+                                    <option value="27880">
+                                        शासकीय रेलवे पुलिस जोधपुर
+                                    </option>
+                                    <option value="27830">
+                                        शासकीय रेलवे पुलिस, अजमेर
+                                    </option>
+                                    <option value="27515">शाहपुरा</option>
+                                    <option value="27513">सलूम्&zwj;बर</option>
+                                    <option value="27567">सवाई माधोपुर</option>
+                                    <option value="27514">सांचौर</option>
+                                    <option value="27566">सिरोही</option>
+                                    <option value="27539">
+                                        सी.आई.डी. सुरक्षा
+                                    </option>
+                                    <option value="27565">सीकर</option>
+                                    <option value="27575">हनुमानगढ़</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>पुलिस स्टेशन</td>
+                            <td>
+                                <select
+                                    id="policestation"
+                                    style="width: 60%; padding: 4px">
+                                    <option value="0">-----चयन-----</option>
+                                    <option value="27560012">
+                                        कोतवाली झुन्&zwj;झुनू
+                                    </option>
+                                    <option value="27560010">गुढा</option>
+                                    <option value="27560042">गोठड़ा</option>
+                                    <option value="27560007">चिड़ावा</option>
+                                    <option value="27560040">धनूरी</option>
+                                    <option value="27560025">नवलगढ़</option>
+                                    <option value="27560038">पचेरीकलां</option>
+                                    <option value="27560030">पिलानी</option>
+                                    <option value="27560003">बगड़</option>
+                                    <option value="27560004">बिसाऊ</option>
+                                    <option value="27560005">बुहाना</option>
+                                    <option value="27560021">मण्डावा</option>
+                                    <option value="27560037">मण्ड्रेला</option>
+                                    <option value="27560020">मलसीसर</option>
+                                    <option value="27560001">
+                                        महिला थाना(झुँझुनू)
+                                    </option>
+                                    <option value="27560022">मुकन्दगढ़</option>
+                                    <option value="27560031">
+                                        सदर झुन्&zwj;झुनू
+                                    </option>
+                                    <option value="27560041">
+                                        साईबर पुलिस थाना(झुँझुनू)
+                                    </option>
+                                    <option value="27560033">सिंघाना</option>
+                                    <option
+                                        value="27560032"
+                                        selected="selected">
+                                        सुरजगढ़
+                                    </option>
+                                    <option value="27560044">सुलताना</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>पिन कोड</td>
+                            <td>
+                                <input
+                                    style="width: 70%"
+                                    type="text"
+                                    placeholder="पिन कोड" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+        <section class="btn">
+            <div>
+                <button>सहेजे</button>
+                <button>रिक्त करें</button>
+            </div>
+        </section>
+
+        <!-- section of Table  -->
+        <section id="Table_address">
+            <div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>क्र.सं</th>
+                        <th>मकान सं</th>
+                        <th>गली का नाम</th>
+                        <th>कॉलोनी / इलाक़ा /क्षेत्र</th>
+                        <th>ग्राम / नगर / शहर</th>
+                        <th>तहसील / ब्लॉक / मंडल</th>
+                        <th>देश</th>
+                        <th>राज्य</th>
+                        <th >जिला</th>
+                        <th>पुलिस स्टेशन</th>
+                        <th>पिन कोड</th>
+                        <th>संशोधित करें</th>
+                        <th>हटाएँ</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td data-label="क्र.सं">1</td>
+                        <td data-label="मकान सं"></td>
+                    <td data-label="गली का नाम"></td>
+                        <td data-label="कॉलोनी / इलाक़ा /क्षेत्र"></td>
+                        <td data-label="ग्राम / नगर / शहर"></td>
+                        <td data-label="तहसील / ब्लॉक / मंडल"></td>
+                        <td data-label="देश"></td>
+                        <td data-label="राज्य"></td>
+                        <td data-label="जिला"></td>
+                        <td data-label="पुलिस स्टेशन"></td>
+                        <td data-label="पिन कोड"></td>
+                        <td data-label="संशोधित करें"></td>
+                        <td data-label="हटाएँ"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </body>
 </html>

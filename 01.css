@@ -1,0 +1,18 @@
+.button-5 {
+  width: 200px;
+  border-radius: 5px;
+  background-color: #F4F200;
+  background-image: #F4F200;
+  background-image: (green);
+  background-image: -webkit-linear-gradient(top, #fff 0%,#F4F200 100%);
+  background-image: linear-gradient(to bottom, #fff 0%,#F4F200 100%);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.button-5:hover {
+  background-position: -400%;
+  transition: background 300ms ease-in-out;
+}

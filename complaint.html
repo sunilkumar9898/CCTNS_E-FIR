@@ -8,31 +8,50 @@
             rel="shortcut icon"
             href="https://t3.ftcdn.net/jpg/01/43/34/06/360_F_143340630_jcgZ0V6PhIG1N3LFDnaJ8k0m5XXswbJV.jpg"
             type="image/x-icon" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="script.js"></script>
 
-            <style>
-                .complaint_details_tab{
-                    display: flex;
+        <style>
+            .complaint_details_tab {
+                display: flex;
+            }
+            .complaint_details_tab a {
+                padding: 5px 10px;
+                font-size: 14px;
+                margin-right: 2px;
+                text-decoration: none;
+            }
+            .iframe {
+                margin-top: 10px;
+            }
 
-                }
-                .complaint_details_tab a{
-                    background-color: rgb(24, 131, 238);
-                    color: white;
-                    padding: 5px 10px;
-                    font-size: 14px;
-                        margin-right: 2px;
-                    text-decoration: none;
-                }
-                .iframe{
-                    margin-top: 10px;
-                }
-            </style>
+            .button {
+                color: white;
+                background-color: rgb(24, 131, 238);
+            }
+
+            .active {
+                background-color: #f9d980;
+                color: black;
+            }
+        </style>
     </head>
     <body>
         <div class="complaint_details_tab">
-            <a href="personal.html" target="Iframe">व्यक्तिगत जानकारी</a>
-            <a href="address.html" target="Iframe">पता</a>
-            <a href="otherinfo.html" target="Iframe">अन्य जानकारी</a>
+            <a class="button active" href="personal.html" target="Iframe"
+                >व्यक्तिगत जानकारी</a
+            >
+            <a class="button" href="address.html" target="Iframe">पता</a>
+            <a class="button" href="otherinfo.html" target="Iframe"
+                >अन्य जानकारी</a
+            >
         </div>
-        <iframe  name="Iframe" class="iframe" src="personal.html" frameborder="0" height="380px" width="100%"></iframe>
+        <iframe
+            name="Iframe"
+            class="iframe"
+            src="personal.html"
+            frameborder="0"
+            height="380px"
+            width="100%"></iframe>
     </body>
 </html>

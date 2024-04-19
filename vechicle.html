@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Vechicl Information--</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            form{
+                display: flex;
+                justify-content: start;
+                gap: 50px;
+                font-size: 14px;
+            }
+
+            table{
+                width: 70%;
+                border-spacing: 5px 8px;
+            }
+            table tr td:nth-child(1){
+                background-color: #e0e6ff;
+                padding: 5px 10px;
+            }
+
+            table tr td input{
+                width: 70%;
+                padding: 5px 10px;
+            }
+                table tr td select{
+                width: 70%;
+                padding: 5px 10px;
+            }
+
+            @media (min-width:220px) and (max-width:420px) {
+
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+                gap: 100px;
+                font-size: 14px;
+            }
+            table{
+                width: 100%;
+                border-spacing: 5px 8px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <tr>
+                    <td>वाहन पंजीकरण संख्या*</td>
+                    <td><input type="text" placeholder="वाहन पंजीकरण संख्या"></td>
+                </tr>
+                <tr>
+                    <td>रंग</td>
+                    <td><input type="text" placeholder="रंग"></td>
+                </tr>
+
+                <tr>
+                    <td>इंजन संख्या</td>
+                    <td><input type="text" placeholder="इंजन संख्या"></td>
+                </tr>
+                <tr>
+                    <td>विवरण</td>
+                    <td><input type="text" placeholder="विवरण"></td>
+                </tr>
+                <tr>
+                    <td>बीमा कंपनी*</td>
+                    <td><select id="ainsuranceComp" >
+                                        		 <option value="0">------------चयन-----------</option>
+                                        		  <option value="1">IFFCO TOKIO General Insurance Co. Ltd.</option>
+                                                 <option value="2">Liberty General Insurance Co. Ltd.</option>
+                                                 <option value="3">Shriram General Insurance Co. Ltd.</option>
+                                                 <option value="4">Reliance General Insurance Co.Ltd</option>
+                                                 <option value="5">DHFL General Insurance Co. Ltd</option>
+                                                 <option value="6">Bajaj Allianz Allianz General Insurance Co. Ltd</option>
+                                                 <option value="7">Edelweiss General Insurance Co. Ltd.</option>
+                                                 <option value="8">Kotak Mahindra General Insurance Co. Ltd.</option>
+                                                 <option value="9">Go Digit General Insurance Co. Ltd</option>
+                                                 <option value="10">Royal Sundaram General Insurance Co. Ltd.</option>
+                                                 <option value="11">Exports Credit Guarantee of India Co. Ltd</option>
+                                                 <option value="12">The New India Assurance Co. Ltd</option>
+                                                 <option value="13">Tata AIG General Insurance Company Limited</option>
+                                                 <option value="14">National Insurance Co. Ltd.</option>
+                                                 <option value="15">Universal Sompo General Insurance Co. Ltd.</option>
+                                                 <option value="16">Agriculture Insurance Company of India Ltd.</option>
+                                                 <option value="17">Acko General Insurance Co. Ltd.</option>
+                                                 <option value="18">SBI General Insurance Co. Ltd.</option>
+                                                 <option value="19">Bharti AXA General Insurance Co. Ltd.</option>
+                                                 <option value="20">ICICI LOMBARD General Insurance Co. Ltd.</option>
+                                                 <option value="21">Magma HDI General Insurance Co. Ltd.</option>
+                                                 <option value="22">HDFC ERGO General Insurance Co.Ltd.</option>
+                                                 <option value="23">United India Insurance Co. Ltd.</option>
+                                                 <option value="24">The Oriental Insurance Co. Ltd.</option>
+                                                 <option value="25">Future Generali India Insurance Co. Ltd.</option>
+                                                 <option value="26">Cholamandalam MS General Insurance Co. Ltd.</option>
+                                                 <option value="27">Raheja QBE General Insurance Co. Ltd.</option>
+                                                 <option value="28">Star Health & Allied Insurance Co.Ltd.</option>
+                                                 <option value="29">Apollo Munich Health Insurance Co. Ltd</option>
+                                                 <option value="30">Religare Health Insurance Co. Ltd</option>
+                                                 <option value="31">Max Bupa Health Insurance Co. Ltd</option>
+                                                 <option value="32">CIGNA TTK Health Insurance Co. Ltd.</option>
+                                                 <option value="33">Aditya Birla Health Insurance Co. Ltd.</option>
+                                                 <option value="34">Vehicle not insured</option>
+                                            </select></td>
+                </tr>
+            </table>
+
+
+
+            <table>
+                <tr>
+                    <td>चेसिस नंबर</td>
+                    <td><input type="text" placeholder="चेसिस नंबर"></td>
+                </tr>
+                <tr>
+                    <td>वाहन का प्रकार*</td>
+                    <td><select id="amvTypeCd1" >
+                                                 <option value="0">-----चयन-----</option>
+                                               <option value="14">(मैक्सी) वैन / लौंग मल्टी परपज़ वैन</option><option value="35">एम्बुलेंस</option><option value="7">ऑटो इलेक्ट्रिक</option><option value="8">ऑटो ट्रक (लोड ऑटो)</option><option value="6">ऑटो रिक्शा (पैसेंजर)</option><option value="11">कार</option><option value="12">कार इलेक्ट्रिक / गोल्फ कार्ट</option><option value="13">जीप/स्मॉल वैन/मल्टी परपज़ वैन</option><option value="17">टिलर / मिनी ट्रैक्टर</option><option value="29">ट्रेलर (इंजन के बिना)</option><option value="25">ट्रेलर ट्रक</option><option value="21">ट्रैक्टर</option><option value="48">नाव</option><option value="15">बस</option><option value="16">मिनी ट्रक</option><option value="10">मिनी वैन</option><option value="30">मिसलेनियस मोटर व्हीकल टाइप</option><option value="43">मोटर बोट</option><option value="4">मोटर साइकिल</option><option value="1">मोपेड/पैडलयुक्त मोटर साइकिल</option><option value="27">मोबाइल क्रेन लिफ्टर</option><option value="18">मोबाइल फोर्क लिफ्टर</option><option value="26">मोबाइल लोडर / एक्सकेवेटर/बुलडोजर</option><option value="50">रेल इंजन</option><option value="28">रोड लेवेलर / कौम्पैक्टर / कार्पेटर</option><option value="19">रोड़ स्वीपर</option><option value="23">लाइट ट्रक (टेम्पो)</option><option value="47">विमान</option><option value="39">शिप/जहाज/पोत</option><option value="46">साइकिल</option><option value="5">स्कूटर</option><option value="2">स्कूट्रेट</option><option value="3">स्कूट्रेट इलेक्ट्रिक</option><option value="49">स्टीमर</option><option value="20">स्मॉल ट्रक/  लारी / मल्टी परपज़ व्हीकल</option><option value="22">हारवेस्टर ट्रैक्टर</option><option value="24">हैवी ट्रक</option>
+                                                <!--form:options /-->
+                                            </select></td>
+                </tr>
+
+                <tr>
+                    <td>निर्माता*</td>
+                    <td><select> id="amvModelCd" >
+                <option value="0"> -----चयन-----</option>
+                                            </select></td>
+                </tr>
+                <tr>
+                    <td>निर्माण वर्ष</td>
+                    <td><select id="selectyear">
+                                                <option value="0"> -----चयन-----</option>
+                                                <option value="1">2024</option><option value="2">2023</option><option value="3">2022</option><option value="4">2021</option><option value="5">2020</option><option value="6">2019</option><option value="7">2018</option><option value="8">2017</option><option value="9">2016</option><option value="10">2015</option><option value="11">2014</option><option value="12">2013</option><option value="13">2012</option><option value="14">2011</option><option value="15">2010</option><option value="17">2008</option><option value="16">2009</option><option value="19">2006</option><option value="18">2007</option><option value="21">2004</option><option value="20">2005</option><option value="23">2002</option><option value="22">2003</option><option value="25">2000</option><option value="24">2001</option><option value="27">1998</option><option value="26">1999</option><option value="29">1996</option><option value="28">1997</option><option value="31">1994</option><option value="30">1995</option><option value="34">1991</option><option value="35">1990</option><option value="32">1993</option><option value="33">1992</option><option value="38">1987</option><option value="39">1986</option><option value="36">1989</option><option value="37">1988</option><option value="42">1983</option><option value="43">1982</option><option value="40">1985</option><option value="41">1984</option><option value="46">1979</option><option value="47">1978</option><option value="44">1981</option><option value="45">1980</option><option value="51">1974</option><option value="50">1975</option><option value="49">1976</option><option value="48">1977</option><option value="55">1970</option><option value="54">1971</option><option value="53">1972</option><option value="52">1973</option><option value="59">1966</option><option value="58">1967</option><option value="57">1968</option><option value="56">1969</option><option value="63">1962</option><option value="62">1963</option><option value="61">1964</option><option value="60">1965</option><option value="68">1957</option><option value="69">1956</option><option value="70">1955</option><option value="71">1954</option><option value="64">1961</option><option value="65">1960</option><option value="66">1959</option><option value="67">1958</option><option value="76">1949</option><option value="77">1948</option><option value="78">1947</option><option value="79">1946</option><option value="72">1953</option><option value="73">1952</option><option value="74">1951</option><option value="75">1950</option><option value="85">1940</option><option value="84">1941</option><option value="87">1938</option><option value="86">1939</option><option value="81">1944</option><option value="80">1945</option><option value="83">1942</option><option value="82">1943</option><option value="93">1932</option><option value="92">1933</option><option value="95">1930</option><option value="94">1931</option><option value="89">1936</option><option value="88">1937</option><option value="91">1934</option><option value="90">1935</option><option value="100">1925</option><option value="98">1927</option><option value="99">1926</option><option value="96">1929</option><option value="97">1928</option>
+                                            </select></td>
+                </tr>
+                <tr>
+                    <td>मॉडल</td>
+                    <td><select id="amvModelCd" >
+                                                <option value="0"> -----चयन-----</option>
+
+                                            </select></td>
+                </tr>
+            </table>
+        </form>
+    </body>
 </html>

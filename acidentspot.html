@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Accidental Spot</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+                table{
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        table tr ,th, td{
+            border: 1px solid gray;
+            padding: 10px;
+            background-color: #a3bfe3;
+        }
+        table tr th{
+            color: white;
+            background-color: #2b6ac1;
+        }
+        button{
+            font-weight: 850;
+            color: #1d242f;
+            border: 1px solid rgb(95, 143, 232);
+            background-color: #d3dae4;
+            cursor: pointer;
+        }
+
+        @media (min-width:220px)  and (max-width:420px){
+            table{
+                font-size: 10px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <tr>
+                    <th>क्र.सं</th>
+                    <th>घटना से-तक (दिनांक / समय)</th>
+                    <th>पुलिस स्टेशन से दिशा</th>
+                    <th>पुलिस स्टेशन से दूरी (किमी में )</th>
+                    <th>क्षेत्र</th>
+                    <th>शहर</th>
+                    <th>संशोधित करें</th>
+                    <th>हटाएँ</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>❌</td>
+                </tr>
+            </table>
+
+            <div style="text-align: end; padding: 3px; margin-top: 20px;">
+                <button>नया जोड़ें</button>
+            </div>
+        </form>
+    </body>
 </html>

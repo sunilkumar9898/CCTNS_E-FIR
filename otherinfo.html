@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Other Information</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            table{
+                border-spacing: 10px;
+            }
+            table tr td:nth-child(1){
+                background-color: rgb(214, 214, 232);
+                padding: 2px 10px;
+            }
+            .btn{
+                text-align: end;
+
+            }
+            .btn button{
+                padding: 5px;
+            }
+
+
+    .table tr td:nth-child(1){
+                background-color: white;
+                padding: 2px 10px;
+            }
+.table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+.table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+.table tr th{
+background-color: #2b6ac1;
+  border: 1px solid #ddd;
+  color: white;
+  padding: .35em;
+}
+
+.table th,
+.table td {
+  padding: .625em;
+  text-align: center;
+}
+
+.table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .table {
+    border: 0;
+  }
+
+  .table caption {
+    font-size: 1.3em;
+  }
+
+  .table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  .table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  .table td::before {
+
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <tr>
+                    <td>व्यवसाय</td>
+                    <td><select id="occupation">
+                                                    <option value="0"> -----चयन-----</option>
+                                                    <option value="1">अकादमी सदस्य</option><option value="81">अचल संपत्ति व्यापारी</option><option value="137">अध्यक्ष</option><option value="93">अध्यापक</option><option value="140">अन्य</option><option value="72">अर्ध चिकित्सा स्टाफ</option><option value="162">आकस्मिक कार्यकर्ता</option><option value="54">आयातक</option><option value="38">इंजीनियर / अभियंता</option><option value="149">उधमी</option><option value="55">उधोगपति</option><option value="3">एजेंट / अभिकर्ता</option><option value="20">कंपनी कार्यपालक</option><option value="21">कंप्यूटर व्यवसायी</option><option value="25">कर्मी</option><option value="8">कलाकार</option><option value="7">कारीगर</option><option value="14">कारोबार</option><option value="41">किसान</option><option value="132">कुक</option><option value="77">कुली</option><option value="23">कूरियर</option><option value="15">केबल आपरेटर</option><option value="18">क्लीनर ट्रक</option><option value="17">क्लीनर बस</option><option value="69">खान कर्मचारी</option><option value="71">खानाबदोश</option><option value="89">खिलाड़ी</option><option value="53">गृह स्वामिनी</option><option value="129">गैर शासकीय कर्मचारी</option><option value="102">घड़ीसाज</option><option value="29">घरेलू नौकर</option><option value="139">घरेलू सहायक</option><option value="112">चपरासी</option><option value="116">चालक</option><option value="110">चालक - आटोरिक्शा</option><option value="31">चालक &ndash; कार</option><option value="32">चालक &ndash; कार्ट</option><option value="33">चालक &ndash; टैक्सी</option><option value="34">चालक &ndash; ट्रक</option><option value="30">चालक &ndash; बस</option><option value="148">चिकित्सक</option><option value="66">चिकित्सा व्यवसायी</option><option value="36">चुने हुए प्रतिनिधि</option><option value="90">छात्र</option><option value="92">जमादार</option><option value="103">जुलाहा</option><option value="56">जेल स्टाफ</option><option value="142">ज्वैलर्स</option><option value="123">ट्रैक्टर चालक</option><option value="22">ठेकेदार</option><option value="78">डाक कर्मी</option><option value="94">तकनीशियन/यंत्रविद्</option><option value="105">दर्जी</option><option value="12">दलाल</option><option value="86">दुकान का कर्मचारी</option><option value="87">दुकानदार</option><option value="68">दूधवाला</option><option value="95">दूरसंचार कर्मी</option><option value="60">धोबी</option><option value="154">नर्स (परिचारिका)</option><option value="74">नलसाज</option><option value="121">नाई</option><option value="106">निजी कार्यालय में कार्यरत</option><option value="39">निर्यातक</option><option value="141">नौकरीपेशा</option><option value="57">न्यायिक अधिकारी</option><option value="152">पत्रकार</option><option value="143">परिचर </option><option value="109">पर्यटक</option><option value="135">पर्यवेक्षक</option><option value="73">पायलट</option><option value="155">पुजारी</option><option value="75">पुलिस अधिकारी</option><option value="145">प्रतिनिधि</option><option value="136">प्रबंधक</option><option value="126">प्रारूप तैयार करने वाला</option><option value="156">प्रोफेसर</option><option value="115">प्रोफेसर/प्राध्यापक</option><option value="133">फायरमैन</option><option value="48">फेरी वाला</option><option value="40">फैक्टरी मजदूर</option><option value="104">फोटोग्राफर</option><option value="114">बस कंडक्टर</option><option value="16">ब़ढई</option><option value="58">बाजीगर</option><option value="37">बिजली मिस्त्री</option><option value="97">बेरोजगार</option><option value="9">बैंक कर्मी</option><option value="122">बैलगाड़ी चालक</option><option value="13">भवन निर्माता</option><option value="10">भिखारी</option><option value="111">मछुआरा</option><option value="44">माली</option><option value="130">मिलान लिपिक</option><option value="65">मीडिया से संबंधित कर्मचारी</option><option value="64">मैकेनिक/यंत्र - प्रवीण</option><option value="19">मोची</option><option value="160">योग शिक्षक </option><option value="28">रक्षा कार्मिक</option><option value="147">राजनयिक</option><option value="76">राजनीतिज्ञ</option><option value="63">राज़मिस्त्री</option><option value="125">रिक्शा चालक</option><option value="80">रेलवे स्टाफ</option><option value="127">लाइनमैन</option><option value="2">लेखाकार / गणक</option><option value="120">लोहार</option><option value="4">वायुयान कर्मी</option><option value="6">वास्तुविद्</option><option value="83">विक्रेता</option><option value="100">विक्रेता</option><option value="42">वित्तपोषक</option><option value="151">विदेशी अधिकारी </option><option value="61">विधि व्यवसायी</option><option value="5">विमान पत्तन कर्मी</option><option value="101">वीडियो प्रदर्शक</option><option value="131">वेल्डर</option><option value="96">व्यापारी</option><option value="26">व्यापारी / पुरावशेष</option><option value="27">व्यापारी &ndash; चर्म और फर</option><option value="11">शराब तस्कर</option><option value="157">शोध छात्र </option><option value="59">श्रमिक</option><option value="107">संबंधी/मित्र</option><option value="84">सफाई कर्मचारी</option><option value="117">समाज सेवा</option><option value="47">सरकारी कर्मचारी अराजपत्रित</option><option value="46">सरकारी कर्मचारी राजपत्रित</option><option value="91">सर्वेक्षक</option><option value="113">सह-यात्री के रुप में यात्रा करने वाला</option><option value="138">सहायक पर्यवेक्षक</option><option value="144">सांस्कृतिक कार्यकर्ता </option><option value="98">सार्वजनिक सेवा का व्यक्ति</option><option value="62">साहित्यिक व्यक्ति</option><option value="70">साहूकार</option><option value="45">सुनार</option><option value="85">सुरक्षा गार्ड</option><option value="128">सूत्र / अर्ध सैनिक संगठन में काम करना</option><option value="119">सेवानिवृत्त कर्मचारी</option><option value="118">सेवानिवृत्त गवर्नमेंट. कर्मचारी</option><option value="159">स्वनियोजित</option><option value="163">स्वनियोजित</option><option value="51">होटल कर्मचारी</option><option value="50">होम गार्ड</option>
+                                                </select></td>
+                </tr>
+                <tr>
+                    <td>राष्ट्रीयता हेतु देश *</td>
+                    <td>
+                        <select id="nationality" value="80" disabled="true">
+                                                    <option value="80">भारत</option><option value="7">अंगोला</option><option value="12">अजरबैजन</option><option value="216">अज्ञात</option><option value="6">अन्डोरा</option><option value="188">अपर वाल्टा</option><option value="2">अफगानिस्तान</option><option value="3">अफ्रीका</option><option value="1">अबुधाबी / दुबई</option><option value="8">अर्जेन्टिना</option><option value="5">अल्जीरिया</option><option value="4">अल्बेनिया</option><option value="87">आइवरी कॉस्ट</option><option value="79">आइसलैण्ड</option><option value="84">आयरलैंड</option><option value="9">आर्मीनिया</option><option value="11">आस्ट्रिया</option><option value="10">आस्ट्रेलिया</option><option value="209">इंग्लैंड</option><option value="51">इक्वाडोर</option><option value="85">इज्राइल</option><option value="86">इटली</option><option value="57">इथोपिया</option><option value="81">इन्डोनेशिया</option><option value="55">इरित्रा</option><option value="56">इस्तोनिया</option><option value="83">ईराक</option><option value="82">ईरान</option><option value="218">ईस्ट तिमुर</option><option value="190">उजवेकिस्तान</option><option value="95">उत्तर कोरिया</option><option value="217">एण्टीगुआ बारबुडा</option><option value="53">एलसाल्वाटडोर</option><option value="133">ओमान</option><option value="91">कजाखिस्तान</option><option value="143">कतार</option><option value="33">कनाड़ा</option><option value="31">कम्बोडिया</option><option value="41">कांगो</option><option value="94">किरीबती</option><option value="93">किर्गीजिया</option><option value="92">कीनिया</option><option value="97">कुबैत</option><option value="34">केप वर्डे</option><option value="32">कैमेरुन</option><option value="40">कोमोरॉस</option><option value="39">कोलम्बिया</option><option value="42">कोस्टारिका</option><option value="44">क्यूबा</option><option value="43">क्रोएशिया</option><option value="64">गबोन</option><option value="72">गिनी</option><option value="73">गिनी विसाउ</option><option value="74">गुयाना</option><option value="219">ग्रीन लैंड  </option><option value="69">ग्रीस</option><option value="70">ग्रेनाडा</option><option value="71">ग्वातेमाला</option><option value="68">घाना</option><option value="36">चाड</option><option value="37">चिली</option><option value="38">चीन</option><option value="46">चेक रिपब्लिक</option><option value="88">जमैका</option><option value="67">जर्मनी</option><option value="89">जापान</option><option value="203">जाम्बिया</option><option value="202">जायरे</option><option value="66">जार्जिया</option><option value="90">जार्डन</option><option value="204">जिम्बाबवे</option><option value="177">टोंगा </option><option value="176">टोगो</option><option value="179">ट्यूनिशिया</option><option value="178">ट्रीनीडाड एण्ड तोबागो</option><option value="48">डिजिबौती</option><option value="47">डेनमार्क</option><option value="50">डोमिनिक रिपब्लिक</option><option value="49">डोमिनिका</option><option value="172">तंजानिया</option><option value="173">तस्मानिया</option><option value="170">ताइवान</option><option value="171">ताजीकिस्तान</option><option value="175">तिब्बत</option><option value="181">तुर्की</option><option value="180">तुर्कीमानिस्तान</option><option value="182">तुवाली</option><option value="174">थाईलैण्ड</option><option value="158">दक्षिण अफ्रिका</option><option value="96">दक्षिण कोरिया</option><option value="65">दी गामिबिया</option><option value="130">नाइजर</option><option value="59">नाइजीरिया का राज्य संघ</option><option value="124">नामीबिया</option><option value="132">नार्वे</option><option value="129">निकारागुआ</option><option value="127">नीदर लैण्ड एन्टाइल्स</option><option value="126">नीदर लैण्डस</option><option value="125">नेपाल</option><option value="128">न्यूजीलैण्ड</option><option value="131">ऩाइजीरिया</option><option value="135">पनामा</option><option value="134">पाकिस्तान</option><option value="136">पापुआ न्यु गिनी</option><option value="137">पारागुवै</option><option value="141">पुर्तगाल</option><option value="138">पैरु</option><option value="140">पोलैण्ड</option><option value="142">प्यूर्टोरिको</option><option value="58">फाल्क लैण्ड आइसलैण्ड</option><option value="61">फिनलैण्ड</option><option value="220">फिलिस्तीन</option><option value="139">फिलीपिन्स</option><option value="60">फीजी</option><option value="62">फ्रांस</option><option value="63">फ्रेंच पालिनीशिया</option><option value="15">बंग्लादेश</option><option value="29">बरकिना</option><option value="14">बहरेन</option><option value="13">बहामास</option><option value="16">बार्बादोस</option><option value="30">बुरुन्डी</option><option value="28">बुल्गारिया</option><option value="18">बेनिन</option><option value="207">बेनिन</option><option value="20">बेरमुडा</option><option value="17">बेलारुस</option><option value="205">बेलारूस</option><option value="206">बेलीज</option><option value="19">बेल्जियम</option><option value="24">बोतस्वाना</option><option value="22">बोलीविया</option><option value="23">बोस्निया &ndash; हर्जेगोविना</option><option value="25">ब्राजील</option><option value="26">ब्रिटिश होन्डुरस</option><option value="208">ब्रिटेन</option><option value="27">ब्रूनेई</option><option value="21">भूटान</option><option value="54">भूम्ध्यरेखीय गिनी</option><option value="119">मंगोलिया</option><option value="109">मलाया</option><option value="108">मलावी</option><option value="110">मलेशिया</option><option value="122">मस्कट</option><option value="107">मादागास्कर</option><option value="111">मालदीव</option><option value="112">माली</option><option value="113">माल्टा</option><option value="52">मिश्र</option><option value="116">मैक्सिको</option><option value="210">मैसेडोनिया</option><option value="212">मोंटेनेग्रो</option><option value="121">मोजाम्बीक</option><option value="118">मोनाको</option><option value="120">मोरक्को</option><option value="114">मोरीटेनिया</option><option value="117">मोल्डाविया</option><option value="211">मोल्दोवा</option><option value="115">मौरीटियस</option><option value="123">म्यांमार</option><option value="199">यमन</option><option value="201">यूकोन</option><option value="184">यूक्रेन</option><option value="183">यूगान्डा</option><option value="200">यूगोस्लाविया</option><option value="186">यूनाइटेड किंगडम (यू के)</option><option value="189">यूरुगुवै</option><option value="146">रवान्डा </option><option value="145">रुस राज्य संघ</option><option value="144">रोमानिया</option><option value="101">लसोथो</option><option value="102">लाइबेरिया</option><option value="98">लाओस</option><option value="106">लाक्समवर्ग</option><option value="99">लाटविया</option><option value="104">लिचटेन्स्टीन</option><option value="105">लिथुनिया</option><option value="103">लिबिया</option><option value="100">लेबनान</option><option value="191">वनुअटू</option><option value="194">वियतनाम</option><option value="192">वेटिकन सिटी</option><option value="193">वेनेजुएला</option><option value="215">वेल्स</option><option value="196">वेस्टइंडिज</option><option value="197">वेस्टर्न आस्ट्रेलिया</option><option value="198">वेस्टर्न सामोआ</option><option value="195">वैलिस एवं फुटुना आइलैण्ड</option><option value="160">श्री लंका</option><option value="185">संयुक्त अरब अमीरात</option><option value="187">संयुक्त राज्य अमेरिका</option><option value="149">सउदी अरब</option><option value="214">सर्बिया</option><option value="45">साइप्रस</option><option value="148">सावटोम और प्रिन्सिप</option><option value="153">सिंगापुर</option><option value="152">सियारालिओन</option><option value="169">सीरिया</option><option value="164">सुडान</option><option value="165">सुरीनाम</option><option value="161">सेंट कीट्स &ndash; नेविस</option><option value="162">सेंट लुसिया</option><option value="163">सेंट विन्सेन्ट</option><option value="147">सेनमेरिनो</option><option value="150">सेनेगल</option><option value="35">सेन्ट्रल अफ्रीकन रिपब्लिक</option><option value="151">सेशेल्स </option><option value="157">सोमालिया</option><option value="156">सोलोमन आइसलैण्ड</option><option value="213">स्कॉटलैंड</option><option value="159">स्पेन</option><option value="154">स्लोवेकिया</option><option value="155">स्लोवेनिया</option><option value="166">स्वाजी लैण्ड</option><option value="168">स्वीट्जर लैण्ड</option><option value="167">स्वीडन</option><option value="78">हंगरी</option><option value="75">हैती</option><option value="77">हॉग &ndash; कांग</option><option value="76">होन्थुरस</option>
+                                                </select></td>
+                </tr>
+                <tr>
+                    <td>पहचान का प्रकार</td>
+                    <td>    <select id="idType" >
+                                                    <option value="0"> -----चयन-----</option>
+                                                    <option value="1">पासपोर्ट</option><option value="2">चालक अनुज्ञप्ति</option><option value="3">राशन कार्ड</option><option value="4">शस्त्र अनुज्ञप्ति</option><option value="5">मतदाता कार्ड</option><option value="6">आयकर (पैन कार्ड)</option><option value="8" selected="selected">आधार कार्ड (भा वि प प्रा)</option>
+                                                </select></td>
+                </tr>
+                <tr>
+                    <td>आईडी कार्ड संख्‍या</td>
+                    <td><input type="text" placeholder="आईडी कार्ड संख्‍या">&nbsp;<button>जोड़ें</button></td>
+                </tr>
+            </table>
+            <div class="btn">
+                <button>रिक्त करें</button>
+            </div>
+        </form>
+
+        <table class="table">
+
+  <thead>
+    <tr >
+      <th scope="col">क्र.सं</th>
+      <th scope="col">	पहचान का प्रकार</th>
+      <th scope="col">आईडी कार्ड संख्‍या</th>
+      <th scope="col">आईडी जारी करने का स्थान</th>
+      <th scope="col">आईडी जारी करने की तिथि(दिनांक/माह/वर्ष)</th>
+      <th scope="col">हटाएँ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="क्र.सं">1</td>
+      <td data-label="पहचान का प्रकार">04/01/2016</td>
+      <td data-label="आईडी कार्ड संख्‍या">$1,190</td>
+      <td data-label="आईडी जारी करने का स्थान">03/01/2016 - 03/31/2016</td>
+      <td data-label="आईडी जारी करने की तिथि(दिनांक/माह/वर्ष)">03/01/2016 - 03/31/2016</td>
+      <td data-label="हटाएँ">❌</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+    </body>
 </html>

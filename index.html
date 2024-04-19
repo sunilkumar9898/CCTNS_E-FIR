@@ -9,9 +9,136 @@
             href="https://t3.ftcdn.net/jpg/01/43/34/06/360_F_143340630_jcgZ0V6PhIG1N3LFDnaJ8k0m5XXswbJV.jpg"
             type="image/x-icon" />
         <link rel="stylesheet" href="style.css" />
-        <!-- <script src="script.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+        <style>
+            #modalpopup {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 999;
+                background-color: rgba(61, 56, 56, 0.659);
+            }
+            .modal {
+                width: 30%;
+                padding: 40px;
+                background-color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -999;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                overflow: auto; /* Change from overflow: hidden to overflow: auto */
+            }
+
+            .modal p {
+                padding: 10px 0px;
+            }
+
+            .agreebtn {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .agreebtn button {
+                padding: 15px 25px;
+                border-radius: 34px;
+                color: white;
+                background-color: #35a785;
+                border: none;
+                cursor: pointer;
+            }
+            .agreebtn button:hover {
+                background-color: #21906f;
+            }
+
+            @media (min-width: 200px) and (max-width: 420px) {
+                #modalpopup {
+                    position: fixed;
+                    width: 100%;
+                    height: 150%;
+                    z-index: 999;
+                    background-color: rgba(66, 61, 61, 0.773);
+                }
+                .modal {
+                    width: 90%;
+                    padding: 20px;
+                    background-color: white;
+                    position: absolute;
+                    top: 35%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                }
+                .modalpop {
+                    height: 550px;
+                    overflow: scroll;
+                }
+            }
+        </style>
     </head>
     <body>
+        <section id="modalpopup">
+            <div class="modal">
+                <div style="text-align: end; cursor: pointer;" onclick="modalpopup()">❌</div>
+                <h1
+                    style="
+                        text-align: center;
+                        border-bottom: 5px solid rgb(0, 166, 255);
+                        padding-bottom: 5px;
+                    ">
+                    Disclaimer
+                </h1>
+                <div class="modalpop">
+                    <p>
+                        ई-एफआईआर की सुविधा मात्र वाहन चोरी की शिकायत दर्ज करने
+                        हेतु वैकल्पिक व्यवस्था के रूप में उपलब्ध करवाई गई हैं,
+                        बशर्ते कि :- (e-FIR facility has been provided as an
+                        alternative arrangement to lodge complaint regarding
+                        vehicle theft only,provided that:-)
+                    </p>
+                    <p>1. मुल्जिम अज्ञात हो | (Accused is unknown)</p>
+                    <p>
+                        2 .घटना के दौरान चोट / बल प्रयोग नहीं हुआ हो |(No use of
+                        force/injury during incident) .
+                    </p>
+                    <p>
+                        इस प्रकार की चोरी की घटना ,जिसमे मुल्जिम ज्ञात हो अथवा
+                        घटना के दौरान चोट /बल प्रयोग किया गया हो , की शिकायत
+                        संबंधित पुलिस थाने में ही दर्ज करवाई जा सकती है | (Theft
+                        complaint,where accused is known or there is use of
+                        force/injury,canbe lodged in respective Police Station
+                        only)
+                    </p>
+                    <p>
+                        ई-एफआईआर की सुविधा का उपयोग करने हेतु शिकायतकर्त्ता के
+                        मोबाईल नम्बर एवं आधार नम्बर दर्ज करना अनिवार्य हैं
+                        क्योंकि ई -हस्ताक्षर की आवश्यकता होगी | (Mobile No. and
+                        Aadhar No.of complainant are mandatory for using
+                        services of e-FIR, As e signature is required)
+                    </p>
+                    <p>
+                        ई-एफआईआर आमजन की सुविधा हेतु उपलब्ध करवाई गई है , गलत
+                        सुचना देने अथवा इस सुविधा के दुरूपयोग किये जाने की
+                        स्थिति में शिकायतकर्त्ता के विरुद्ध आईपीसी के तहत क़ानूनी
+                        कार्रवाई अमल में लाई जावेगी | (e-FIR facility has been
+                        provided to facilitate common people,incase of lodging
+                        malafide complaint or misuse of the facility,legal
+                        proceeding under IPC shall be initiated against the
+                        complainant)
+                    </p>
+                    <div class="agreebtn">
+                        <button onclick="modalpopup()">I AGREE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <header>
             <div class="logo1">
                 <img src="./img/LOGOHINDI.jpg" alt="cctns logo" />
@@ -72,7 +199,7 @@
         <section>
             <div class="Primary_fir">
                 <div>
-                    <h4> प्राथमिकी पंजीकरण</h4>
+                    <h4>प्राथमिकी पंजीकरण</h4>
                 </div>
                 <div>
                     <h5>*अनिवार्य क्षेत्र</h5>
@@ -83,60 +210,77 @@
         <!-- Details of Lost Articale  -->
 
         <section class="lost_article">
+            <div class="Tabs">
+                <a class="button active" target="myframe" href="complaint.html">
+                    <!--Complainant-->
+                    शिकायतकर्ता
+                </a>
+                <a class="button" target="myframe" href="injurd.html">
+                    <!--Victim Information-->
+                    पीड़ित सूचना
+                </a>
+                <a class="button" target="myframe" href="acidentspot.html">
+                    <!--Occurrence-->
+                    घटना – स्थल
+                </a>
 
-			<div class="Tabs">
-				<a target="myframe" href="complaint.html">
-					<!--Complainant-->
-					शिकायतकर्ता
-				</a>
-                  <a target="myframe" href="injurd.html">
-					<!--Victim Information-->
-					पीड़ित सूचना
-				</a>
-				<a target="myframe" href="acidentspot.html">
-					<!--Occurrence-->
-					घटना – स्थल
-				</a>
+                <a class="button" target="myframe" href="vechicle.html">
+                    <!--Property of Interest-->
+                    वाहन का विवरण
+                </a>
+            </div>
 
-				<a target="myframe" href="vechicle.html">
-					<!--Property of Interest-->
-					वाहन का विवरण
-				</a>
-			</div>
-
-            <iframe class="iframe" name="myframe" src="complaint.html"  height="450px" width="99%" frameborder="2">
-
+            <iframe
+                class="iframe"
+                name="myframe"
+                src="complaint.html"
+                height="450px"
+                width="99%"
+                frameborder="2">
             </iframe>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <section id="footer">
+            <div class="footer_btn">
+                <button>ई-एफ़.आई.आऱ को एस.एच.ओ.को प्रस्तुत करे</button
+                >&nbsp;&nbsp;&nbsp;
+                <button>ई-एफ़.आई.आऱ को एस.एच.ओ. को भेजने से पूर्व देखे</button>
+            </div>
+        </section>
 
         <script>
-    var date = new Date();
-    var current_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
-    document.getElementById("p1").innerHTML = current_date;
-</script>
+            var date = new Date();
+            var current_date =
+                date.getDate() +
+                "-" +
+                "0" +
+                (date.getMonth() + 1) +
+                "-" +
+                date.getFullYear();
+            document.getElementById("p1").innerHTML = current_date;
+        </script>
+
+        <script>
+            var date = new Date();
+            var current_time =
+                date.getHours() +
+                ":" +
+                date.getMinutes() +
+                ":" +
+                date.getSeconds();
+            document.getElementById("p2").innerHTML = current_time;
+        </script>
+
+        <!-- script for modalpopup -->
+
+        <script>
+            // let modalpopup1 = document.getElementById("modalpoup");
+            function modalpopup(){
+        let modal = document.getElementById("modalpopup");
+        modal.style.display = "none"
+            }
 
 
-<script>
-    var date = new Date();
-    var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    document.getElementById("p2").innerHTML = current_time;
-</script>
+        </script>
     </body>
 </html>
